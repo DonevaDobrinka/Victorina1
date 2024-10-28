@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина по Човекът и природата</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <img id="znayko" src="znayko.png" alt="Знайко">
+        <div class="score">Текущи точки: <span id="score">0</span></div>
+        <div id="question-container">
+            <div class="question" id="question">Въпросът ще се появи тук</div>
+            <button class="answer" onclick="selectAnswer(this, true)">Верен отговор</button>
+            <button class="answer" onclick="selectAnswer(this, false)">Грешен отговор</button>
+            <button class="answer" onclick="selectAnswer(this, false)">Грешен отговор</button>
+        </div>
+        <button id="next-btn" class="next-btn" onclick="nextQuestion()">Следващ въпрос</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
